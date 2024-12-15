@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import {
   Button,
   ConstructorElement,
@@ -79,6 +79,9 @@ export const BurgerConstructorUI: FC<BurgerConstructorUIProps> = ({
         <CurrencyIcon type='primary' />
       </div>
       <Button
+        disabled={
+          !constructorItems.bun || constructorItems.ingredients.length === 0
+        }
         htmlType='button'
         type='primary'
         size='large'
