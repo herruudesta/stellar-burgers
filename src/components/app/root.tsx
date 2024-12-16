@@ -1,10 +1,11 @@
-import { FC } from 'react';
-import styles from './root.module.css';
+import { TRootProps } from './rootprops';
 import { AppHeader } from '@components';
-import { TRootProps } from './type';
+
+import { FC } from 'react';
+import styles from './app.module.css';
 
 export const Root: FC<TRootProps> = ({ children }) => (
-  <div className={styles.root}>
+  <div className={styles.app}>
     <AppHeader />
     {children}
   </div>

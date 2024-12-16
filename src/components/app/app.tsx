@@ -10,11 +10,6 @@ import {
   ResetPassword
 } from '@pages';
 
-import '../../index.css';
-import styles from './app.module.css';
-
-import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
-
 import {
   IngredientDetails,
   Modal,
@@ -22,11 +17,16 @@ import {
   ProtectedRoute
 } from '@components';
 
-import { Root } from './root';
+import { fetchUser, fetchIngredients, resetOrderModalData } from '@slices';
 
 import { useEffect } from 'react';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+
 import { useDispatch } from '../../services/store';
-import { fetchUser, fetchIngredients, resetOrderModalData } from '@slices';
+import { Root } from './root';
+
+import '../../index.css';
+import styles from './app.module.css';
 
 const App = () => {
   const dispatch = useDispatch();
