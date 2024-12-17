@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 9px;
 }
 
 ::-webkit-scrollbar-track {
@@ -20,9 +20,17 @@
 }
 
 .detailPageWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 120px auto;
 }
 
 .detailHeader {
+  font-family: 'Jet Brains Mono';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 20px;
   text-align: center;
 }
