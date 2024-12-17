@@ -13,7 +13,7 @@ interface TFeedsState {
   data: TOrdersData;
 }
 
-const initialState: TFeedsState = {
+export const initialState: TFeedsState = {
   isLoading: true,
   error: null,
   data: {

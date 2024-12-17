@@ -81,9 +81,7 @@ export const BurgerConstructorUI: FC<BurgerConstructorUIProps> = ({
         <CurrencyIcon type='primary' />
       </div>
       <Button
-        disabled={
-          !constructorItems.bun || constructorItems.ingredients.length === 0
-        }
+        data-order-button
         htmlType='button'
         type='primary'
         size='large'
