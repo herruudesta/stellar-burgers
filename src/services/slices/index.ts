@@ -3,18 +3,23 @@ export {
   addIngredient,
   removeIngredient,
   moveIngredient,
-  resetConstructor
+  resetConstructor,
+  initialState as constructorInitialState
 } from './builder';
 
-export { fetchFeeds } from './feeds';
+export { fetchFeeds, initialState as feedsInitialState } from './feeds';
 
-export { fetchIngredients } from './ingredients';
+export {
+  fetchIngredients,
+  initialState as ingredientsInitialState
+} from './ingredients';
 
 export {
   fetchOrder,
   fetchOrders,
   createOrder,
-  resetOrderModalData
+  resetOrderModalData,
+  initialState as ordersInitialState
 } from './orders';
 
 export {
@@ -24,5 +29,6 @@ export {
   register,
   resetPassword,
   login,
-  logout
+  logout,
+  initialState as userInitialState
 } from './user';

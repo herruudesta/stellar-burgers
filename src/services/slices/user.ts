@@ -27,7 +27,7 @@ interface TUserState {
   data: TUser;
 }
 
-const initialState: TUserState = {
+export const initialState: TUserState = {
   isAuthChecked: false,
   isAuthenticated: false,
   data: {
